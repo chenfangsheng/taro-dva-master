@@ -1,13 +1,13 @@
-import Taro, { Component, Config } from "@tarojs/taro";
-import "@tarojs/async-await";
-import { Provider } from "@tarojs/redux";
+import Taro, { Component, Config } from "@tarojs/taro"
+import "@tarojs/async-await"
+import { Provider } from "@tarojs/redux"
 import "./config/taroConfig"
-import "./utils/request";
-import Index from "./pages/index";
+import "./utils/request"
+import Index from "./pages/index"
 import dva from './utils/dva'
 import models from './models'
 import './app.scss'
-import { globalData } from "./utils/common";
+import { globalData } from "./utils/common"
 
 const dvaApp = dva.createApp({
   initialState: {},
