@@ -28,5 +28,5 @@ export interface DataInterface {
   pic: string
   title: string
   year: number
-  _id: string
+  _id?: string
 }
