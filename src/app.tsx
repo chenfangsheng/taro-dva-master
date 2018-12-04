@@ -38,22 +38,22 @@ class App extends Component {
    */
   async componentDidMount() {
     // 获取参数
-    const referrerInfo = this.$router.params.referrerInfo;
-    const query = this.$router.params.query;
-    !globalData.extraData && (globalData.extraData = {});
+    const referrerInfo = this.$router.params.referrerInfo
+    const query = this.$router.params.query
+    !globalData.extraData && (globalData.extraData = {})
     if (referrerInfo && referrerInfo.extraData) {
-      globalData.extraData = referrerInfo.extraData;
+      globalData.extraData = referrerInfo.extraData
     }
     if (query) {
       globalData.extraData = {
         ...globalData.extraData,
         ...query
-      };
+      }
     }
 
     // 获取设备信息
-    const sys = await Taro.getSystemInfo();
-    sys && (globalData.systemInfo = sys);
+    const sys = await Taro.getSystemInfo()
+    sys && (globalData.systemInfo = sys)
   }
 
   componentDidShow() { }
