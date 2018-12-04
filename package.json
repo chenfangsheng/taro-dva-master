@@ -1,7 +1,7 @@
 {
   "name": "taro-demo",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "this is a demo",
   "scripts": {
     "build:weapp": "taro build --type weapp",
